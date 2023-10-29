@@ -30,7 +30,7 @@
           Ainda não tem cadastro?
         </q-item-label>
 
-        <LinkCadastro
+        <LinksUteis
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
@@ -46,7 +46,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import LinkCadastro from 'src/components/LinkCadastro.vue'
+import LinksUteis from 'src/components/LinksUteis.vue'
 
 const linksList = [
   {
@@ -60,7 +60,7 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    LinkCadastro
+    LinksUteis
   },
 
   setup () {
