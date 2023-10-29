@@ -8,10 +8,10 @@ const routes = [
     ]
   },
   {
-    path: '/cadastro/',
-    component: () => import('layouts/MainLayout.vue'),
+    path: '/cadastro',
+    component: () => import('layouts/CadastroLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '/cadastro', component: () => import('pages/CadastroPage.vue') }
     ]
   },
   // Always leave this as last one,

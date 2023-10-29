@@ -27,7 +27,7 @@
         <q-item-label
           header
         >
-          Ainda não tem cadastro?
+         Ja tem cadastro?
         </q-item-label>
 
         <LinksUteis
@@ -50,14 +50,14 @@ import LinksUteis from 'src/components/LinksUteis.vue'
 
 const linksList = [
   {
-    title: 'Cadastre-se aqui!',
-    icon: 'account_circle',
-    link: '/#/cadastro'
+    title: 'Pagina inicial',
+    icon: 'home',
+    link: ''
   }
 ]
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: 'CadastroLayout',
 
   components: {
     LinksUteis
